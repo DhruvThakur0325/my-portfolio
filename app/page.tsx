@@ -381,15 +381,46 @@ export default function Home() {
           </div>
 
 
-         {/* Project Cards */}
+        
+{/* Project Cards */}
 <div className="grid md:grid-cols-2 gap-8">
 
-  {/* Project 1: HireFlow */}
-  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-purple-500/40 transition-all duration-500">
-    <p className="text-purple-400 mb-4">01</p>
+  {/* Project 1: Customer Support */}
+  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500">
+    <p className="text-blue-400 mb-4">01</p>
 
     <h3 className="text-2xl font-bold mb-4">
-      AI-Powered Recruitment & ATS Platform
+      AI-Based Customer Support Ticketing System
+    </h3>
+
+    <p className="text-gray-400 leading-7 mb-6">
+      A customer support platform designed to manage and route support
+      tickets, track service-level agreements, and monitor agent
+      performance and customer satisfaction.
+    </p>
+
+    <div className="flex flex-wrap gap-2 mb-8">
+      {["Next.js", "Node.js", "MongoDB", "Python"].map((tech) => (
+        <span
+          key={tech}
+          className="px-3 py-1 rounded-full bg-white/10 text-sm"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    <p className="text-gray-400 text-sm">
+      Project repository link to be added.
+    </p>
+  </div>
+
+  {/* Project 2: AI-Powered Recruitment & ATS */}
+  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-purple-500/40 transition-all duration-500">
+    <p className="text-purple-400 mb-4">02</p>
+
+    <h3 className="text-2xl font-bold mb-4">
+      AI-Powered Recruitment &amp; ATS Platform
     </h3>
 
     <p className="text-gray-400 leading-7 mb-6">
@@ -439,37 +470,8 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Project 2: Customer Support */}
-  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500">
-    <p className="text-blue-400 mb-4">02</p>
-
-    <h3 className="text-2xl font-bold mb-4">
-      AI-Based Customer Support Ticketing System
-    </h3>
-
-    <p className="text-gray-400 leading-7 mb-6">
-      A planned customer support platform for managing and routing
-      support tickets, tracking service-level agreements, and
-      monitoring agent performance and customer satisfaction.
-    </p>
-
-    <div className="flex flex-wrap gap-2 mb-8">
-      {["Next.js", "Node.js", "MongoDB", "Python"].map((tech) => (
-        <span
-          key={tech}
-          className="px-3 py-1 rounded-full bg-white/10 text-sm"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
-
-    <p className="text-gray-400 text-sm">
-      Project repository link to be added.
-    </p>
-  </div>
-
 </div>
+
 </div>
       </section>
 
