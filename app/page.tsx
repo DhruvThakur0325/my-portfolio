@@ -389,7 +389,7 @@ export default function Home() {
     <p className="text-purple-400 mb-4">01</p>
 
     <h3 className="text-2xl font-bold mb-4">
-      HireFlow — Recruitment & Resume Screening Platform
+      AI-Powered Recruitment & ATS Platform
     </h3>
 
     <p className="text-gray-400 leading-7 mb-6">
