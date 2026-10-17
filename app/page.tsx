@@ -381,111 +381,99 @@ export default function Home() {
           </div>
 
 
-          {/* Project Cards */}
-          <div className="grid md:grid-cols-2 gap-8">
+         {/* Project Cards */}
+<div className="grid md:grid-cols-2 gap-8">
 
+  {/* Project 1: HireFlow */}
+  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-purple-500/40 transition-all duration-500">
+    <p className="text-purple-400 mb-4">01</p>
 
-            {/* Project 1 */}
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-purple-500/40 transition-all duration-500">
-              <p className="text-purple-400 mb-4">
-                01
-              </p>
+    <h3 className="text-2xl font-bold mb-4">
+      HireFlow — Recruitment & Resume Screening Platform
+    </h3>
 
-              <h3 className="text-2xl font-bold mb-4">
-                AI-Based Customer Support Ticketing System
-              </h3>
+    <p className="text-gray-400 leading-7 mb-6">
+      A full-stack recruitment platform for managing candidates
+      and screening PDF and DOCX resumes against job requirements.
+      It provides skill-match scores, matched skills, and missing skills.
+    </p>
 
-              <p className="text-gray-400 leading-7 mb-6">
-                An AI-powered customer support platform designed to
-                automatically manage and route support tickets while
-                providing SLA tracking, agent performance insights,
-                and customer satisfaction analytics.
-              </p>
+    <div className="flex flex-wrap gap-2 mb-8">
+      {["Next.js", "TypeScript", "FastAPI", "PostgreSQL"].map((tech) => (
+        <span
+          key={tech}
+          className="px-3 py-1 rounded-full bg-white/10 text-sm"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
 
-              <div className="flex flex-wrap gap-2 mb-8">
+    <div className="flex flex-wrap gap-x-5 gap-y-3">
+      <a
+        href="https://hireflow-frontend-lime.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white font-semibold hover:text-purple-400 transition"
+      >
+        Live Demo ↗
+      </a>
 
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  Next.js
-                </span>
+      <a
+        href="https://github.com/DhruvThakur0325/hireflow-frontend"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white font-semibold hover:text-purple-400 transition"
+      >
+        Frontend Code ↗
+      </a>
 
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  Node.js
-                </span>
+      <a
+        href="https://github.com/DhruvThakur0325/hireflow-backend"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white font-semibold hover:text-purple-400 transition"
+      >
+        Backend Code ↗
+      </a>
+    </div>
+  </div>
 
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  MongoDB
-                </span>
+  {/* Project 2: Customer Support */}
+  <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500">
+    <p className="text-blue-400 mb-4">02</p>
 
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  Python
-                </span>
+    <h3 className="text-2xl font-bold mb-4">
+      AI-Based Customer Support Ticketing System
+    </h3>
 
-              </div>
+    <p className="text-gray-400 leading-7 mb-6">
+      A planned customer support platform for managing and routing
+      support tickets, tracking service-level agreements, and
+      monitoring agent performance and customer satisfaction.
+    </p>
 
-             <a
-  href="https://github.com/DhruvThakur0325"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-white font-semibold hover:text-purple-400 transition"
->
-  View Project →
-</a>
-            </div>
+    <div className="flex flex-wrap gap-2 mb-8">
+      {["Next.js", "Node.js", "MongoDB", "Python"].map((tech) => (
+        <span
+          key={tech}
+          className="px-3 py-1 rounded-full bg-white/10 text-sm"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
 
+    <p className="text-gray-400 text-sm">
+      Project repository link to be added.
+    </p>
+  </div>
 
-            {/* Project 2 */}
-            <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500">
-
-              <p className="text-blue-400 mb-4">
-                02
-              </p>
-
-              <h3 className="text-2xl font-bold mb-4">
-                AI-Powered Recruitment & ATS Platform
-              </h3>
-
-              <p className="text-gray-400 leading-7 mb-6">
-                An AI-powered recruitment platform designed to analyze
-                resumes, match candidates with job descriptions, rank
-                applicants, and simplify the hiring workflow.
-              </p>
-
-              <div className="flex flex-wrap gap-2 mb-8">
-
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  React
-                </span>
-
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  Python
-                </span>
-
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  FastAPI
-                </span>
-
-                <span className="px-3 py-1 rounded-full bg-white/10 text-sm">
-                  PostgreSQL
-                </span>
-
-              </div>
-
-             <a
-  href="https://github.com/DhruvThakur0325"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-white font-semibold hover:text-purple-400 transition"
->
-  View Project →
-</a> 
-
-            </div>
-
-
-          </div>
-
-        </div>
+</div>
+</div>
       </section>
+
+
             {/* Experience Section */}
       <section
   id="experience"
