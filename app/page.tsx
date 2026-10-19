@@ -385,22 +385,33 @@ export default function Home() {
 {/* Project Cards */}
 <div className="grid md:grid-cols-2 gap-8">
 
-  {/* Project 1: Customer Support */}
+ 
+  {/* Project 1: Customer Support AI */}
   <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-blue-500/40 transition-all duration-500">
     <p className="text-blue-400 mb-4">01</p>
 
     <h3 className="text-2xl font-bold mb-4">
-      AI-Based Customer Support Ticketing System
+      Customer Support Ticket Management System
     </h3>
 
     <p className="text-gray-400 leading-7 mb-6">
-      A customer support platform designed to manage and route support
-      tickets, track service-level agreements, and monitor agent
-      performance and customer satisfaction.
+      A full-stack web application for managing customer support
+      tickets. Users can create tickets, view existing tickets,
+      search and filter the ticket list, and update ticket statuses.
+      Ticket data is stored in MongoDB and status changes persist
+      after refreshing the page.
     </p>
 
     <div className="flex flex-wrap gap-2 mb-8">
-      {["Next.js", "Node.js", "MongoDB", "Python"].map((tech) => (
+      {[
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Mongoose",
+      ].map((tech) => (
         <span
           key={tech}
           className="px-3 py-1 rounded-full bg-white/10 text-sm"
@@ -410,10 +421,27 @@ export default function Home() {
       ))}
     </div>
 
-    <p className="text-gray-400 text-sm">
-      Project repository link to be added.
-    </p>
+    <div className="flex flex-wrap gap-x-5 gap-y-3">
+      <a
+        href="https://customer-support-6pu7z148j-dhruv-s-portfolio.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white font-semibold hover:text-blue-400 transition"
+      >
+        Live Demo →
+      </a>
+
+      <a
+        href="https://github.com/DhruvThakur0325/customer-support-ai"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white font-semibold hover:text-blue-400 transition"
+      >
+        GitHub Repository →
+      </a>
+    </div>
   </div>
+
 
   {/* Project 2: AI-Powered Recruitment & ATS */}
   <div className="group p-8 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 hover:-translate-y-2 hover:border-purple-500/40 transition-all duration-500">
